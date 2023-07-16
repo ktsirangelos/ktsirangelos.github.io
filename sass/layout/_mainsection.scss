@@ -1,0 +1,94 @@
+@use "../abstracts/mixins";
+
+// Main
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  pre {
+    font-family: "Monaco", monospace;
+    line-height: 2.7rem;
+    font-size: 1.3rem;
+    color: var(--color-black);
+
+    > .tree-title {
+      color: var(--color-blue);
+    }
+
+    > .in-progress {
+      color: var(--color-grey);
+    }
+
+    a {
+      color: var(--color-black);
+      text-decoration: none;
+      &:hover {
+        color: var(--color-green);
+      }
+    }
+
+    @include mixins.respond(tab-port) {
+      font-size: 1.5rem;
+    }
+
+    @include mixins.respond(phone) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+  }
+
+  @include mixins.respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @include mixins.respond(phone) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Columns
+
+.about,
+.projects,
+.stack-1,
+.stack-2 {
+  display: flex;
+  justify-content: center;
+
+  @include mixins.respond(tab-port) {
+    min-width: 50vw;
+  }
+
+  @include mixins.respond(phone) {
+    min-width: 100vw;
+    padding: 10rem 5rem;
+  }
+}
+
+// About
+
+.about {
+  p {
+    line-height: 2.7rem;
+    font-family: "Monaco", monospace;
+    font-size: 1.3rem;
+    color: var(--color-black);
+    padding: 0 6.5vw;
+
+    @include mixins.respond(tab-port) {
+      font-size: 1.5rem;
+      line-height: 3rem;
+      padding: 10vw;
+    }
+
+    @include mixins.respond(phone) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../abstracts/mixins";
+
+footer {
+  justify-self: end;
+  align-self: center;
+
+  pre {
+    margin: 0 2rem 2rem 0;
+    font-family: "Monaco", monospace;
+    font-size: 1.2rem;
+    color: var(--color-black);
+
+    @include mixins.respond(tab-port) {
+      font-size: 1.5rem;
+      line-height: 3rem;
+      margin: 0;
+    }
+
+    @include mixins.respond(phone) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      margin: 0;
+    }
+  }
+
+  @include mixins.respond(tab-port) {
+    justify-self: center;
+    margin: 0;
+    padding: 5rem;
+  }
+
+  @include mixins.respond(phone) {
+    justify-self: center;
+    margin: 0;
+    padding: 10rem;
+  }
+}

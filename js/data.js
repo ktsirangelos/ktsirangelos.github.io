@@ -14,15 +14,10 @@ Web Developer
     </div>`
 
 export const about =`
-          Hey, I am a web developer based in Rotterdam, NL. I enjoy creating
-          robust, minimal interfaces that get the job done effectively and
-          efficiently while providing optimal user experience. I deeply care
-          about making things green, sustainable, educational and fair to all
-          groups and individuals.
-          <span style="color: var(--color-green)">
-            For any questions or work you would like to discuss, feel free to
-            write me an email!
-          </span>
+Hey, I am a web developer based in Rotterdam, NL. I enjoy creating robust, minimal interfaces that get the job done effectively and
+efficiently while providing optimal user experience. I deeply care about making things green, sustainable, educational and fair to all
+groups and individuals.
+<span style="color: var(--color-green)"> For any questions or work you would like to discuss, feel free to write me an email.</span>
 `
 export const projects = {
   "<span class='tree-title'>Projects</span>": {

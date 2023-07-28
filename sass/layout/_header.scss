@@ -8,9 +8,10 @@ header {
 
   @include mixins.respond(phone) {
     justify-content: center;
-    min-height: 25rem;
+    min-height: 30rem;
     margin: 0;
-    gap: 1rem;
+    padding-bottom: 10rem;
+    gap: 1rem ;
   }
 }
 

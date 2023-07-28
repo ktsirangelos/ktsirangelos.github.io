@@ -1,7 +1,5 @@
 @use "../abstracts/mixins";
 
-// Main
-
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -51,8 +49,6 @@ main {
   }
 }
 
-// Columns
-
 .about,
 .projects,
 .stack-1,
@@ -69,8 +65,6 @@ main {
     padding: 10rem 5rem;
   }
 }
-
-// About
 
 .about {
   p {
@@ -89,6 +83,7 @@ main {
     @include mixins.respond(phone) {
       font-size: 1.8rem;
       line-height: 3rem;
+      padding: 1rem 1rem;
     }
   }
 }

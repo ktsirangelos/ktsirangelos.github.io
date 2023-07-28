@@ -8,7 +8,7 @@ header {
 
   @include mixins.respond(phone) {
     justify-content: center;
-    min-height: 35rem;
+    min-height: 25rem;
     margin: 0;
     gap: 1rem;
   }
@@ -60,5 +60,6 @@ header {
   :visited,
   :active {
     font-size: 2.5rem;
+    max-width: 100%;
   }
 }}

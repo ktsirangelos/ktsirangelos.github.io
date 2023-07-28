@@ -1,7 +1,7 @@
 "use strict";
 
 // Imports
-import { about, projects, stackOne, stackTwo } from "./data.js";
+import {header, about, projects, stackOne, stackTwo, footer } from "./data.js";
 
 // Functions
 const makeTree = function(obj, indent = '', isRoot = true) {
@@ -26,14 +26,11 @@ const changeText = function() {
       : "this website →";
 }
 
-const getCurrentYear = function () {
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-};
-
 // Init
+document.querySelector('header').innerHTML = `${header}`;
 document.querySelector('.about').innerHTML = `<p>${about}</p>`;
 document.querySelector('.projects').innerHTML = `<pre>${makeTree(projects)}</pre>`;
 document.querySelector('.stack-1').innerHTML = `<pre>${makeTree(stackOne)}</pre>`;
 document.querySelector('.stack-2').innerHTML = `<pre>${makeTree(stackTwo)}</pre>`;
+document.querySelector('footer').innerHTML = `<pre>${footer}</pre>`;
 document.querySelector('#this').addEventListener('click', changeText);
-getCurrentYear();

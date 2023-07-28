@@ -1,7 +1,5 @@
 @use "../abstracts/mixins";
 
-// Variables
-
 :root {
   --color-black: #000000;
   --color-grey: #b6b6b6;
@@ -9,15 +7,11 @@
   --color-green: #3fba50;
 }
 
-// Fonts
-
 @font-face {
   src: url("../fonts/MonacoRegular.ttf") format("truetype");
   font-family: "Monaco";
   font-display: swap;
 }
-
-// General
 
 *,
 *:before,
@@ -46,8 +40,6 @@ html {
     font-size: 75%;
   }
 }
-
-// Body
 
 body {
   box-sizing: border-box;

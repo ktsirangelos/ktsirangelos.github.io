@@ -63,7 +63,6 @@ main {
   @include mixins.respond(phone) {
     min-width: 100vw;
     padding: 10rem 5rem;
-    justify-content: start;
   }
 }
 

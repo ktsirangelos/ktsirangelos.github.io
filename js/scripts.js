@@ -21,9 +21,9 @@ const makeTree = function(obj, indent = '', isRoot = true) {
 
 const changeText = function() {
   document.getElementById("this").textContent =
-    document.getElementById("this").textContent === "this website →"
-      ? "already here ↩"
-      : "this website →";
+    document.getElementById("this").textContent === "this website"
+      ? "already here"
+      : "this website";
 }
 
 // Init

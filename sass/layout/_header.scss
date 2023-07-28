@@ -1,7 +1,5 @@
 @use "../abstracts/mixins";
 
-// Header
-
 header {
   display: flex;
   justify-content: space-between;
@@ -9,14 +7,12 @@ header {
   padding: 2rem;
 
   @include mixins.respond(phone) {
-    display: flex;
     justify-content: center;
     min-height: 35rem;
     margin: 0;
+    gap: 1rem;
   }
 }
-
-// Desktop title
 
 .title {
   flex: 15;
@@ -35,34 +31,6 @@ header {
     display: none;
   }
 }
-
-// Mobile title
-
-.mobile-title {
-  display: none;
-
-  pre {
-    font-family: "Monaco", monospace;
-  }
-
-  @include mixins.respond(phone) {
-    width: 100%;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    line-height: 5rem;
-
-    a {
-      color: var(--color-black);
-      text-decoration: none;
-    }
-  }
-}
-
-// Links
 
 .link {
   flex: 1;
@@ -88,6 +56,9 @@ header {
   }
 
   @include mixins.respond(phone) {
-    display: none;
+   a:link,
+  :visited,
+  :active {
+    font-size: 2.5rem;
   }
-}
+}}

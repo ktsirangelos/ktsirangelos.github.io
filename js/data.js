@@ -1,17 +1,14 @@
 export const header = `
- <div class="title">
-      <p>Konstantinos Tsirangelos – Web Developer</p>
-    </div>
-    <div class="mobile-title">
-<pre><span style="font-size: 2rem;">Konstantinos Tsirangelos</span>
-Web Developer
-├── <a href="mailto:ktsirangelos@proton.me">Email</a>
-└── <a href="https://github.com/ktsirangelos" target="_blank" rel="noopener noreferrer">GitHub</a></pre>
-    </div>
-    <div class="link"><a href="mailto:ktsirangelos@proton.me">Email</a></div>
-    <div class="link">
-      <a href="https://github.com/ktsirangelos" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>`
+  <div class="title">
+    <p>Konstantinos Tsirangelos – Web Developer</p>
+  </div>
+  <div class="link">
+    <a href="mailto:ktsirangelos@proton.me">Email</a>
+  </div>
+  <div class="link">
+    <a href="https://github.com/ktsirangelos" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+`
 
 export const about =`
 Hey, I am a web developer based in Rotterdam, NL. I enjoy creating robust, minimal interfaces that get the job done effectively and
@@ -108,7 +105,7 @@ export const stackTwo = {
   }
 };
 
-export const footer = `<pre>
-      &copy;
-      └── ${new Date().getFullYear()}</pre>
+export const footer = `
+&copy;
+└── ${new Date().getFullYear()}
 `

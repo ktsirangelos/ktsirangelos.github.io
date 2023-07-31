@@ -50,25 +50,3 @@ document.querySelector('.stack-1').innerHTML = `<pre>${objectToTree(stackOne)}</
 document.querySelector('.stack-2').innerHTML = `<pre>${objectToTree(stackTwo)}</pre>`;
 document.querySelector('footer').innerHTML = `<pre>${footer}</pre>`;
 document.querySelector('#this').addEventListener('click', changeText);
-
-// For development
-//
-// const example = {
-//   "a": {
-//     "b": {
-//       "c": null,
-//       "d": null,
-//       "e": null
-//     },
-//     "f": null,
-//     "g": null,
-//     "h": null
-//   }
-// }
-//
-// console.log(objectToTree(example))
-// console.log('prefix', prefix,'isRoot:',isRoot, 'isLast:',isLast, 'key:',key)
-// console.log(tree)
-// console.log(object[key])
-// console.log('childPrefix:', childPrefix)
-

@@ -13,7 +13,7 @@ example = {
     },
     "f": null
   }
-};
+}
 ```
 
 is converted to this tree

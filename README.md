@@ -6,7 +6,7 @@ For example, this object
 example = {
   "a": {
     "b": {
-      "c": null
+      "c": null,
       "d": {
         "e": null
       },
@@ -27,7 +27,28 @@ a
 └── f
 ```
 
-The initial object needs to be in a particular format: every value (of a key-value pair) should be either an `object` or `null`. That's because, in order to make the tree, the function is called recursively and `nul` is the base case (that stops the recursion).
+There are 1 + 6 cases to cover:
+
+```
+0. root
+
+root
+├── 1. branch
+└── 2. leaf
+
+root
+├── branch
+│   ├── 3. branch of branch
+│   └── 4. leaf of branch
+└── leaf
+
+root
+└── leaf
+    ├── 5. branch of leaf
+    └── 6. leaf of leaf
+```
+
+The initial object needs to be in a particular format: every value (of a key-value pair) should be either an `object` or `null`. That's because, in order to make the tree, the function is called recursively and `nul` is the base case (the condition to stop the recursion).
 
 [See how it works](https://github.com/ktsirangelos/ktsirangelos.github.io/blob/9bf076b163f5370e6e022814a1df5efb9a3f0327/js/scripts.js#L7)
 

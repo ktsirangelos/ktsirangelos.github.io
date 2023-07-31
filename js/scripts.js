@@ -3,34 +3,40 @@
 // Imports
 import {header, about, projects, stackOne, stackTwo, footer } from "./data.js";
 
-// objectToTree 
-const objectToTree = function(obj, indent = '', isRoot = true) { 
+// objectToTree is a recursive function that receives an object and creates a visual tree-like representation of it
+const objectToTree = function(object, prefix = '', isRoot = true) {
 
-  let tree = ''; 
-  const keys = Object.keys(obj); 
+  // initialize the variable 'tree'
+  let tree= '';
 
-  // Iterates over each key in the object using forEach loop.
-  keys.forEach((key, index) => {
-    // Checks if the current key is the last in the keys array.
-    const isLast = index === keys.length - 1;
+  // retrieve the keys of the (input) object
+  const currentKeys = Object.keys(object);
 
-    // Adds to the tree string based on whether the node is root and/or the last child.
-    tree += `${indent}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;
+  // iterate through the currentKeys array and
+  currentKeys.forEach((key, index) => {
 
-    // Checks if the value of the current key is an object and not null.
-    if (typeof obj[key] === 'object' && obj[key] !== null) {
-      // Sets the childPrefix based on whether the current key is the last in the array.
-      let childPrefix = isLast ? '    ' : '│   ';
+    // check if the current key is the last element (leaf)
+    const isLast = index === currentKeys.length - 1;
+    // console.log('prefix', prefix,'isRoot:',isRoot, 'isLast:',isLast, 'key:',key)
 
-      // Constructs the indentation for the next level, taking into account whether it is the root.
-      let newIndent = isRoot ? indent : indent + childPrefix;
+    // append the current key to the treeString, adding leaf or branch symbols as needed
+    tree+= `${prefix}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;
+    // console.log(tree)
 
-      // Recursively calls the objectToTree function to process the children of the current key, adding the result to the tree string.
-      tree += objectToTree(obj[key], newIndent, false);
+    // if the value associated with the key is not null (and therefore a nested object), process it recursively 
+    if (object[key] !== null) {
+      // console.log(object[key])
+
+      // determine the prefix for child elements, depending on the parent element being the last at its depth or not
+      let childPrefix = isRoot ? prefix : prefix  + (isLast ? '    ' : '│   ');
+      // console.log('childPrefix:', childPrefix)
+
+      // call objectToTree to represent nested objects, and append the result to the tree
+      tree+= objectToTree(object[key], childPrefix, false);
     }
   });
 
-  return tree; 
+  return tree;
 }
 
 const changeText = function() {
@@ -48,3 +54,18 @@ document.querySelector('.stack-1').innerHTML = `<pre>${objectToTree(stackOne)}</
 document.querySelector('.stack-2').innerHTML = `<pre>${objectToTree(stackTwo)}</pre>`;
 document.querySelector('footer').innerHTML = `<pre>${footer}</pre>`;
 document.querySelector('#this').addEventListener('click', changeText);
+
+// const example = {
+//   "a": {
+//     "b": {
+//       "c": null,
+//       "d": null,
+//       "e": null
+//     },
+//     "f": null,
+//     "g": null,
+//     "h": null
+//   }
+// }
+//
+// console.log(objectToTree(example))

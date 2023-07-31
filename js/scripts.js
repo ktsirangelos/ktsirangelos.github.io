@@ -17,19 +17,15 @@ const objectToTree = function(object, prefix = '', isRoot = true) {
 
     // check if the current key is the last element (leaf)
     const isLast = index === currentKeys.length - 1;
-    // console.log('prefix', prefix,'isRoot:',isRoot, 'isLast:',isLast, 'key:',key)
 
     // append the current key to the treeString, adding leaf or branch symbols as needed
     tree+= `${prefix}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;
-    // console.log(tree)
 
     // if the value associated with the key is not null (and therefore a nested object), process it recursively 
     if (object[key] !== null) {
-      // console.log(object[key])
 
       // determine the prefix for child elements, depending on the parent element being the last at its depth or not
       let childPrefix = isRoot ? prefix : prefix  + (isLast ? '    ' : '│   ');
-      // console.log('childPrefix:', childPrefix)
 
       // call objectToTree to represent nested objects, and append the result to the tree
       tree+= objectToTree(object[key], childPrefix, false);
@@ -55,6 +51,8 @@ document.querySelector('.stack-2').innerHTML = `<pre>${objectToTree(stackTwo)}</
 document.querySelector('footer').innerHTML = `<pre>${footer}</pre>`;
 document.querySelector('#this').addEventListener('click', changeText);
 
+// For development
+//
 // const example = {
 //   "a": {
 //     "b": {
@@ -69,3 +67,8 @@ document.querySelector('#this').addEventListener('click', changeText);
 // }
 //
 // console.log(objectToTree(example))
+// console.log('prefix', prefix,'isRoot:',isRoot, 'isLast:',isLast, 'key:',key)
+// console.log(tree)
+// console.log(object[key])
+// console.log('childPrefix:', childPrefix)
+

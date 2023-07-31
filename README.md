@@ -50,5 +50,5 @@ root
 
 The initial object needs to be in a particular format: every value (of a key-value pair) should be either an `object` or `null`. That's because, in order to make the tree, the function is called recursively and `nul` is the base case (the condition to stop the recursion).
 
-[See how it works](https://github.com/ktsirangelos/ktsirangelos.github.io/blob/ca342b3649d5d21c9c6a39cbef7365441e9d951a/js/scripts.js#L6)
+[See how it works](js/scripts.js#L6)
 

@@ -3,31 +3,31 @@
 // Imports
 import {header, about, projects, stackOne, stackTwo, footer } from "./data.js";
 
-// objectToTree is a recursive function that receives an object and creates a visual tree-like representation of it
+// Functions
 const objectToTree = function(object, prefix = '', isRoot = true) {
 
-  // initialize the variable 'tree'
+  // Initialize the variable 'tree'
   let tree= '';
 
-  // retrieve the keys of the (input) object
+  // Retrieve the keys of the (input) object
   const currentKeys = Object.keys(object);
 
-  // iterate through the currentKeys array and
+  // Iterate through the currentKeys array and
   currentKeys.forEach((key, index) => {
 
-    // check if the current key is the last element (leaf)
+    // Check if the current key is the last element (leaf)
     const isLast = index === currentKeys.length - 1;
 
-    // append the current key to the treeString, adding leaf or branch symbols as needed
+    // Append the current key to the treeString, adding leaf or branch symbols as needed
     tree+= `${prefix}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;
 
-    // if the value associated with the key is not null (and therefore a nested object), process it recursively 
+    // If the value associated with the key is not null (and therefore a nested object), process it recursively 
     if (object[key] !== null) {
 
-      // determine the prefix for child elements, depending on the parent element being the last at its depth or not
+      // Determine the prefix for child elements, depending on the parent element being the last at its depth or not
       let childPrefix = isRoot ? prefix : prefix  + (isLast ? '    ' : '│   ');
 
-      // call objectToTree to represent nested objects, and append the result to the tree
+      // Call objectToTree to represent nested objects, and append the result to the tree
       tree+= objectToTree(object[key], childPrefix, false);
     }
   });

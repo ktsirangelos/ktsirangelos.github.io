@@ -1,6 +1,6 @@
-### This repository contains a recursive function that receives an object and creates a visual tree-like representation of it
+This repository contains a recursive function that receives an object and creates a visual tree-like representation of it
 
-For example, this object
+For example this object
 
 ```javascript
 example = {
@@ -50,8 +50,8 @@ root
 
 The initial object needs to be in a particular format:
 
-- every `value` should be either an `object` or `null`
 - every `key` should be unique
+- every `value` should be either an `object` or `null`
 
-## [See the code](js/scripts.js#L6)
+## [See the code](js/scripts.js#L7)
 

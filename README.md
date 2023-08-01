@@ -1,4 +1,4 @@
-This repository contains a function which converts JavaScript objects to tree-like strings.
+### This repository contains a recursive function that receives an object and creates a visual tree-like representation of it
 
 For example, this object
 
@@ -27,7 +27,7 @@ a
 └── f
 ```
 
-There are 1 + 6 cases to cover, all other permutations can be derived from these
+There are 6 + 1 cases to cover, all other permutations can be derived from these recursively
 
 ```
 0. root
@@ -48,7 +48,10 @@ root
     └── 6. leaf of leaf
 ```
 
-The initial object needs to be in a particular format: every value (of a key-value pair) should be either an `object` or `null`. That's because, in order to make the tree, the function is called recursively and `nul` is the base case (the condition to stop the recursion).
+The initial object needs to be in a particular format:
 
-[See how it works](js/scripts.js#L6)
+- every `value` should be either an `object` or `null`
+- every `key` should be unique
+
+## [See the code](js/scripts.js#L6)
 

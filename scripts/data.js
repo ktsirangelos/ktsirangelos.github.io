@@ -10,7 +10,7 @@ export const header = `
   </div>
 `
 
-export const about =`
+export const about = `
 Hey, I am a web developer based in Rotterdam, NL. I enjoy creating robust, minimal interfaces that get the job done effectively and
 efficiently while providing optimal user experience. I deeply care about making things green, sustainable, educational and fair to all
 groups and individuals.
@@ -28,7 +28,7 @@ export const projects = {
       "<a href='https://ktsirangelos.github.io/dida.studio/' target='_blank' rel='noopener noreferrer'>christinatsirangelou</a>": {
         "<a href='https://github.com/ktsirangelos/dida.studio' target='_blank' rel='noopener noreferrer'>see code</a>": null
       },
-      "<span class='in-progress'>in progress</span>":{
+      "<span class='in-progress'>in progress</span>": {
         "<span class='in-progress'>...</span>": null
       }
     },
@@ -36,7 +36,7 @@ export const projects = {
       "<a href='https://fragrant-mountain-6653.fly.dev/' target='_blank' rel='noopener noreferrer'>phonebook fullstack</a>": {
         "<a href='https://github.com/ktsirangelos/fso-part3' target='_blank' rel='noopener noreferrer'>see code</a>": null
       },
-      "<span class='in-progress'>in progress</span>":{
+      "<span class='in-progress'>in progress</span>": {
         "<span class='in-progress'>...</span>": null
       }
     }
@@ -80,7 +80,7 @@ export const stackTwo = {
   "<span class='tree-title'>Stack 2/2</span>": {
     "Processes": {
       "<span class='in-progress'>CI/CD</span>": null,
-      "<span class='in-progress'>Testing</span>": null,
+      "Testing": null,
       "<span class='in-progress'>TDD</span>": null,
       "Git": {
         "GitHub": null
@@ -94,7 +94,7 @@ export const stackTwo = {
       "ESLint": null,
       "<span class='in-progress'>Webpack</span>": null,
       "<span class='in-progress'>Cypress</span>": null,
-      "<span class='in-progress'>Jest</span>": null,
+      "Jest": null,
       "<span class='in-progress'>Docker</span>": {
         "<span class='in-progress'>Composer</span>": null
       },
@@ -104,6 +104,11 @@ export const stackTwo = {
     }
   }
 };
+
+export const misc = {
+  "curl": null,
+  "lodash": null
+}
 
 export const footer = `
 &copy;

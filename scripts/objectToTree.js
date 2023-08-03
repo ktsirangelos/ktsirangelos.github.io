@@ -1,6 +1,6 @@
 /*
 
-The function objToTree receives an object (example) and creates a tree-like string.
+The function objToTree receives a JavaScript object and creates a visual tree-like representation of it.
 
 For example, this object:
 
@@ -25,7 +25,7 @@ a
 │       └── e
 └── f
 
-There are 6 + 1 cases to cover, all other variations of smaller or larger trees can be derived from these recursively.
+There are 6 + 1 cases to cover, all other variations of smaller or larger trees can be derived from these recursively:
 
 0. root
 
@@ -55,7 +55,7 @@ export const objectToTree = function(object, prefix = '', isRoot = true) {
   let tree = '';
   const currentKeys = Object.keys(object);
   currentKeys.forEach((key, index) => {
-    // Check if the current key is the last element (leaf)
+    // Check if the current key is the last element
     const isLast = index === currentKeys.length - 1;
     // Append the current key to the treeString, adding leaf or branch symbols as needed
     tree += `${prefix}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;

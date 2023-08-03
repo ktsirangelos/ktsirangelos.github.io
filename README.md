@@ -1,3 +1,3 @@
-Among other things, this repository contains a recursive function that receives an object and creates a visual tree-like representation of it.
+Among other things, this repository contains a recursive function that receives a JavaScript object and creates a visual tree-like representation of it.
 
-[see how it works](/scripts/objectToTree.js)
+[Check it out here](/scripts/objectToTree.js)

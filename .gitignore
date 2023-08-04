@@ -1,2 +1,11 @@
-.DS_STORE
+# Dependency directories
 node_modules/
+
+# Parcel cache
+.parcel-cache/
+
+# Environment variables
+.env
+
+# Misc
+.DS_Store

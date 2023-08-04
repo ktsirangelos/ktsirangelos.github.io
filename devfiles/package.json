@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Website",
   "scripts": {
-    "build": "npx parcel build --no-source-maps index.html",
+    "build": "rm -rf dist/ && npx parcel build --no-source-maps index.html",
     "remove": "cd ../ && rm -f *.js *.css *.html *.png *.ttf && rm -rf favicon/",
     "copy": "cp -r dist/* ../",
     "build:full": "npm run build && npm run remove && npm run copy"

@@ -61,6 +61,7 @@ export const stackOne = {
       "<span class='in-progress'>React Native</span>": null,
       "Node.js": {
         "Express": null,
+        "Axios": null,
         "EJS": null
       }
     },

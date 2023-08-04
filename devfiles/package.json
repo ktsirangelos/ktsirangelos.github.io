@@ -1,15 +1,14 @@
 {
-  "name": "k",
+  "name": "ktsirangelos.github.io",
   "version": "1.0.0",
-  "description": "personal website",
+  "description": "Personal Website",
   "scripts": {
     "build": "npx parcel build --no-source-maps index.html",
     "remove": "cd ../ && rm -f *.js *.css *.html *.png *.ttf && rm -rf favicon/",
     "copy": "cp -r dist/* ../",
-    "build:full": "npm run build && npm run remove && npm run copy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:full": "npm run build && npm run remove && npm run copy"
   },
-  "author": "konst",
+  "author": "ktsirangelos",
   "license": "ISC",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.9.3",

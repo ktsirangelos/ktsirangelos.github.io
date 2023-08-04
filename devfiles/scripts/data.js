@@ -50,7 +50,7 @@ export const stackOne = {
       "CSS3": {
         "Sass": null
       },
-      "Javascript": null,
+      "Javascript": { "Lodash": null },
       "<span class='in-progress'>Typescript</span>": null,
       "<span class='in-progress'>GraphQL</span>": null
     },
@@ -93,6 +93,7 @@ export const stackTwo = {
       "Neovim": null,
       "ESLint": null,
       "<span class='in-progress'>Webpack</span>": null,
+      "Parcel": null,
       "<span class='in-progress'>Cypress</span>": null,
       "Jest": null,
       "<span class='in-progress'>Docker</span>": {
@@ -100,15 +101,11 @@ export const stackTwo = {
       },
       "ChatGPT": null,
       "Copilot": null,
+      "curl": null,
       "npm": null
     }
   }
 };
-
-export const misc = {
-  "curl": null,
-  "lodash": null
-}
 
 export const footer = `
 &copy;

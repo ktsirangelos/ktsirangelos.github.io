@@ -2,9 +2,11 @@
   "name": "k",
   "version": "1.0.0",
   "description": "personal website",
-  "main": "index.js",
   "scripts": {
-    "copy:dist": "cp -r dist/* ../",
+    "build": "npx parcel build --no-source-maps index.html",
+    "remove": "cd ../ && rm -f *.js *.css *.html *.png *.ttf && rm -rf favicon/",
+    "copy": "cp -r dist/* ../",
+    "build:full": "npm run build && npm run remove && npm run copy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "konst",

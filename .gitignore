@@ -1,8 +1,9 @@
 # Dependency directories
 node_modules/
 
-# Parcel cache
+# Parcel
 .parcel-cache/
+.map
 
 # Environment variables
 .env

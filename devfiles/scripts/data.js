@@ -20,21 +20,21 @@ export const projects = {
   "<span class='tree-title'>Projects</span>": {
     "Static": {
       "<a id='this' style='cursor: pointer;'>this website →</a>": {
-        "<a href='https://github.com/ktsirangelos/ktsirangelos.github.io' target='_blank' rel='noopener noreferrer'>see code</a>": null
+        "<a href='https://github.com/ktsirangelos/ktsirangelos.github.io' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
-      "<a href='https://fivequarters.studio' target='_blank' rel='noopener noreferrer'>fivequarters.studio →</a>": {
-        "<a href='https://github.com/ktsirangelos/fivequarters.studio' target='_blank' rel='noopener noreferrer'>see code</a>": null
+      "<a href='https://fivequarters.studio' target='_blank' rel='noopener noreferrer'>five quarters →</a>": {
+        "<a href='https://github.com/ktsirangelos/fivequarters.studio' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
-      "<a href='https://ktsirangelos.github.io/dida.studio/' target='_blank' rel='noopener noreferrer'>christinatsirangelou →</a>": {
-        "<a href='https://github.com/ktsirangelos/dida.studio' target='_blank' rel='noopener noreferrer'>see code</a>": null
+      "<a href='https://ktsirangelos.github.io/dida.studio/' target='_blank' rel='noopener noreferrer'>dida studio →</a>": {
+        "<a href='https://github.com/ktsirangelos/dida.studio' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
       "<span class='in-progress'>in progress</span>": {
         "<span class='in-progress'>...</span>": null
       }
     },
     "Web Apps": {
-      "<a href='https://fragrant-mountain-6653.fly.dev/' target='_blank' rel='noopener noreferrer'>fullstack phonebook →</a>": {
-        "<a href='https://github.com/ktsirangelos/fso-part3' target='_blank' rel='noopener noreferrer'>see code</a>": null
+      "<a href='https://fragrant-mountain-6653.fly.dev/' target='_blank' rel='noopener noreferrer'>phonebook →</a>": {
+        "<a href='https://github.com/ktsirangelos/fso-part3' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
       "<span class='in-progress'>in progress</span>": {
         "<span class='in-progress'>...</span>": null

@@ -8,7 +8,7 @@ main {
 
   pre {
     line-height: 2.7rem;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--tree-color);
 
     > .tree-title {
@@ -71,9 +71,9 @@ main {
   p {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--tree-color);
-    padding: 0 6.5vw;
+    padding: 0 6vw;
 
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;

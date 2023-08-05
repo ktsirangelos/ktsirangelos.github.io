@@ -16,8 +16,10 @@ header {
 
 .title {
   flex: 15;
-  background-color: #f0f0f0;
-  border-radius: 5px;
+  color: var(--title-color);
+  background-color: var(--title-container-color);
+  border: 1px solid var(--title-container-border-color);
+  border-radius: 4px;
   height: 100%;
   display: flex;
   justify-content: start;
@@ -29,6 +31,23 @@ header {
   }
   @include mixins.respond(phone) {
     display: none;
+  }
+}
+
+.theme{
+  display: flex;
+  padding: 0 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--theme-button-container-border-color);
+  border-radius: 4px;
+  background-color: var(--theme-button-container-color);
+  cursor: pointer;
+  color: var(--theme-button-color);
+  font-size: 1.5rem;
+  &:hover{
+    background-color: var(--theme-button-container-hover-color);
+    border: 1px solid var(--theme-button-container-border-hover-color);
   }
 }
 
@@ -44,14 +63,15 @@ header {
     align-items: center;
     font-family: "Monaco", monospace;
     font-size: 1.5rem;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    background-color: var(--link-container-color);
+    border: 1px solid var(--link-container-border-color);
+    border-radius: 4px;
     padding: 1.5rem;
-    color: var(--color-black);
+    color: var(--link-color);
     text-decoration: none;
 
     &:hover {
-      background-color: #dfdfdf;
+      background-color: var(--link-container-hover-color);
     }
   }
 

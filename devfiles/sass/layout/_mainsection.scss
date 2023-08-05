@@ -7,24 +7,23 @@ main {
   align-items: center;
 
   pre {
-    font-family: "Monaco", monospace;
     line-height: 2.7rem;
     font-size: 1.3rem;
-    color: var(--color-black);
+    color: var(--tree-color);
 
     > .tree-title {
-      color: var(--color-blue);
+      color: var(--tree-title-color);
     }
 
     > .in-progress {
-      color: var(--color-grey);
+      color: var(--tree-in-progress-color);
     }
 
     a {
-      color: var(--color-black);
+      color: var(--tree-link-color);
       text-decoration: none;
       &:hover {
-        color: var(--color-green);
+        color: var(--tree-link-hover-color);
       }
     }
 
@@ -73,7 +72,7 @@ main {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
     font-size: 1.3rem;
-    color: var(--color-black);
+    color: var(--tree-color);
     padding: 0 6.5vw;
 
     @include mixins.respond(tab-port) {

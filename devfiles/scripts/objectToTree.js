@@ -54,16 +54,15 @@ The initial object needs to be in a particular format:
 export const objectToTree = function(object, prefix = '', isRoot = true) {
   let tree = '';
   const currentKeys = Object.keys(object);
+
   currentKeys.forEach((key, index) => {
-    // Check if the current key is the last element
     const isLast = index === currentKeys.length - 1;
-    // Append the current key to the treeString, adding leaf or branch symbols as needed
+
     tree += `${prefix}${isRoot ? '' : (isLast ? '└── ' : '├── ')}${key}\n`;
-    // If the value associated with the key is not null (and therefore a nested object), process it recursively 
+
     if (object[key] !== null) {
-      // Determine the prefix for child elements, depending on the parent element being the last at its depth or not
       let childPrefix = isRoot ? prefix : prefix + (isLast ? '    ' : '│   ');
-      // Call objectToTree to represent nested objects, and append the result to the tree
+
       tree += objectToTree(object[key], childPrefix, false);
     }
   });

@@ -22,7 +22,7 @@ export const projects = {
       "<a id='this' style='cursor: pointer;'>this website →</a>": {
         "<a href='https://github.com/ktsirangelos/ktsirangelos.github.io' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
-      "<a href='https://fivequarters.studio' target='_blank' rel='noopener noreferrer'>five quarters →</a>": {
+      "<a href='https://ktsirangelos.github.io/fivequarters.studio' target='_blank' rel='noopener noreferrer'>five quarters →</a>": {
         "<a href='https://github.com/ktsirangelos/fivequarters.studio' target='_blank' rel='noopener noreferrer'>see code →</a>": null
       },
       "<a href='https://ktsirangelos.github.io/dida.studio/' target='_blank' rel='noopener noreferrer'>dida studio →</a>": {

@@ -64,30 +64,30 @@ html {
 }
 
 body.dark-mode {
-  --background-color: #161616;
-  --main-text-color: #d4d4d4;
+  --background-color: #1b1b1b;
+  --main-text-color: #cccccc;
 
   --title-color: var(--main-text-color);
-  --title-container-color:#161616;
-  --title-container-border-color: #a7a7a7;
+  --title-container-color:#343434;
+  --title-container-border-color: #858585;
   
   --link-color: var(--main-text-color);
-  --link-container-color: #161616;
-  --link-container-hover-color: #4d4d4d;
-  --link-container-border-color: #a7a7a7;
-  --link-container-border-hover-color: #a7a7a7;
+  --link-container-color: #343434;
+  --link-container-hover-color: #322f1a;
+  --link-container-border-color: #858585;
+  --link-container-border-hover-color: #afa100;
 
   --theme-button-color: var(--main-text-color);
-  --theme-button-container-color: #161616;
-  --theme-button-container-hover-color: #4d4d4d;
-  --theme-button-container-border-color: #a7a7a7;
-  --theme-button-container-border-hover-color: #a7a7a7;
+  --theme-button-container-color: #343434;
+  --theme-button-container-hover-color: #322f1a;
+  --theme-button-container-border-color: #858585;
+  --theme-button-container-border-hover-color: #afa100;
 
   --tree-color: var(--main-text-color);
-  --tree-title-color: #0fbcba;
+  --tree-title-color: #8cb4ff;
   --tree-link-color: var(--main-text-color);
-  --tree-link-hover-color:#8db5ff;
-  --tree-in-progress-color: #ff91c2;
+  --tree-link-hover-color:#4dd061;
+  --tree-in-progress-color: #efb584;
 
   --footer-color: var(--main-text-color)
 }

@@ -72,6 +72,7 @@ header {
 
     &:hover {
       background-color: var(--link-container-hover-color);
+      border: 1px solid var(--link-container-border-hover-color);
     }
   }
 

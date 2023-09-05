@@ -1,7 +1,7 @@
 "use strict";
 
 // Imports
-import { header, about, projects, stackOne, stackTwo, footer } from "./data.js";
+import { header, about, projects, stackOne, stackTwo } from "./data.js";
 import { objectToTree } from "./objectToTree.js";
 import { changeText } from "./changeText.js";
 
@@ -11,7 +11,6 @@ document.querySelector('.about').innerHTML = `<p>${about}</p>`;
 document.querySelector('.projects').innerHTML = `<pre>${objectToTree(projects)}</pre>`;
 document.querySelector('.stack-1').innerHTML = `<pre>${objectToTree(stackOne)}</pre>`;
 document.querySelector('.stack-2').innerHTML = `<pre>${objectToTree(stackTwo)}</pre>`;
-document.querySelector('footer').innerHTML = `<pre>${footer}</pre>`;
 document.querySelector('#this').addEventListener('click', changeText);
 
 const moonSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="ionicon" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>';

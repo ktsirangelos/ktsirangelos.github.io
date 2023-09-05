@@ -15,7 +15,6 @@ header {
 }
 
 .title {
-  flex: 15;
   color: var(--title-color);
   background-color: var(--title-container-color);
   border: 1px solid var(--title-container-border-color);
@@ -26,9 +25,40 @@ header {
   align-items: center;
   p {
     font-family: "Monaco", monospace;
-    font-size: 1.5rem;
-    padding-left: 2rem;
+    font-size: 1.3rem;
+    padding: 0 2rem;
   }
+
+  @include mixins.respond(tab-port) {
+    display: none;
+  }
+
+  @include mixins.respond(phone) {
+    display: none;
+  }
+}
+
+.key {
+  flex-grow: 1;
+  color: var(--title-color);
+  background-color: var(--title-container-color);
+  border: 1px solid var(--title-container-border-color);
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-family: "Monaco", monospace;
+    font-size: 1.3rem;
+    letter-spacing: -0.9px;
+    padding: 0 2rem;
+  }
+
+  @include mixins.respond(tab-port) {
+    display: none;
+  }
+
   @include mixins.respond(phone) {
     display: none;
   }
@@ -44,7 +74,8 @@ header {
   background-color: var(--theme-button-container-color);
   cursor: pointer;
   color: var(--theme-button-color);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+
   &:hover{
     background-color: var(--theme-button-container-hover-color);
     border: 1px solid var(--theme-button-container-border-hover-color);
@@ -52,8 +83,6 @@ header {
 }
 
 .link {
-  flex: 1;
-
   a:link,
   :visited,
   :active {
@@ -62,7 +91,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: "Monaco", monospace;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: var(--link-container-color);
     border: 1px solid var(--link-container-border-color);
     border-radius: 4px;
@@ -72,11 +101,21 @@ header {
 
     &:hover {
       background-color: var(--link-container-hover-color);
-      border: 1px solid var(--link-container-border-hover-color);
+    border: 1px solid var(--link-container-border-hover-color);
     }
   }
 
+   @include mixins.respond(tab-port) {
+    flex: 1;
+   a:link,
+  :visited,
+  :active {
+    font-size: 2rem;
+    max-width: 100%;
+  }}
+
   @include mixins.respond(phone) {
+    flex: 1;
    a:link,
   :visited,
   :active {

@@ -25,7 +25,7 @@ header {
   align-items: center;
   p {
     font-family: "Monaco", monospace;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0 2rem;
   }
 
@@ -50,7 +50,7 @@ header {
   align-items: center;
   p {
     font-family: "Monaco", monospace;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: -0.9px;
     padding: 0 2rem;
   }
@@ -74,7 +74,7 @@ header {
   background-color: var(--theme-button-container-color);
   cursor: pointer;
   color: var(--theme-button-color);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
   &:hover{
     background-color: var(--theme-button-container-hover-color);
@@ -91,7 +91,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: "Monaco", monospace;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-color: var(--link-container-color);
     border: 1px solid var(--link-container-border-color);
     border-radius: 4px;

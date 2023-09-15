@@ -86,6 +86,7 @@ export const stackTwo = {
       "Testing": null,
       "<span class='in-progress'>TDD</span>": null,
       "Git": {
+        "GitLab": null,
         "GitHub": null
       }
     },
@@ -104,6 +105,7 @@ export const stackTwo = {
       },
       "ChatGPT": null,
       "Copilot": null,
+      "yarn": null,
       "npm": null
     }
   }

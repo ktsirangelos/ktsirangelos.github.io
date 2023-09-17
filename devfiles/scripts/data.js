@@ -54,7 +54,7 @@ export const stackOne = {
         "Sass": null
       },
       "Javascript": null,
-      "<span class='in-progress'>Typescript</span>": null,
+      "Typescript": null,
       "<span class='in-progress'>GraphQL</span>": null
     },
     "Frameworks": {

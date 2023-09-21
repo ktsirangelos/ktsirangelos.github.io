@@ -15,6 +15,10 @@ main {
       color: var(--tree-title-color);
     }
 
+    > .tree-section-title {
+      color: var(--tree-section-title-color);
+    }
+
     > .in-progress {
       color: var(--tree-in-progress-color);
     }
@@ -50,7 +54,7 @@ main {
 
 .stack-1,
 .stack-2,
-.stack-3{
+.stack-3 {
   display: flex;
   justify-content: center;
 
@@ -65,9 +69,9 @@ main {
   }
 }
 
-.about { 
+.about {
   display: flex;
-  
+
   p {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;

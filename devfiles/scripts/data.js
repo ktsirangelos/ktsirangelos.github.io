@@ -40,7 +40,7 @@ groups and individuals. For any questions or work you would like to discuss, fee
 
 export const stackOne = {
   "<span class='tree-title'>Stack 1/3</span>": {
-    Languages: {
+    "<span class='tree-section-title'>Languages</span>": {
       HTML5: null,
       CSS3: {
         Sass: null,
@@ -49,7 +49,7 @@ export const stackOne = {
       Typescript: null,
       "<span class='in-progress'>GraphQL</span>": null,
     },
-    Frameworks: {
+    "<span class='tree-section-title'>Frameworks</span>": {
       React: {
         "React Router": null,
         "<span class='in-progress'>Redux</span>": null,
@@ -67,7 +67,7 @@ export const stackOne = {
 
 export const stackTwo = {
   "<span class='tree-title'>Stack 2/3</span>": {
-    "Data Stores": {
+    "<span class='tree-section-title'>Data Stores</span>": {
       "<span class='in-progress'>Postgres</span>": {
         "<span class='in-progress'>Sequelize</span>": null,
       },
@@ -76,7 +76,7 @@ export const stackTwo = {
       },
       "<span class='in-progress'>Redis</span>": null,
     },
-    Processes: {
+    "<span class='tree-section-title'>Processes</span>": {
       "<span class='in-progress'>Agile</span>": {
         "<span class='in-progress'>Scrum</span>": null,
       },
@@ -93,7 +93,7 @@ export const stackTwo = {
 
 export const stackThree = {
   "<span class='tree-title'>Stack 3/3</span>": {
-    Tools: {
+    "<span class='tree-section-title'>Tools</span>": {
       CLI: {
         "Linux Commands": null,
       },

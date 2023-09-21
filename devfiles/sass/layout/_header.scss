@@ -9,8 +9,12 @@ header {
   @include mixins.respond(phone) {
     justify-content: center;
     margin: 0;
-    padding: 4rem 3.8rem;
-    gap: 1rem ;
+    padding: 4rem;
+    gap: 1rem;
+  }
+  
+  @include mixins.respond(tab-port) {
+    padding: 4rem;
   }
 }
 
@@ -25,7 +29,7 @@ header {
   align-items: center;
   p {
     font-family: "Monaco", monospace;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0 2rem;
   }
 
@@ -46,11 +50,11 @@ header {
   border-radius: 4px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   p {
     font-family: "Monaco", monospace;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     letter-spacing: -0.9px;
     padding: 0 2rem;
   }
@@ -64,7 +68,7 @@ header {
   }
 }
 
-.theme{
+.theme {
   display: flex;
   padding: 0 1.5rem;
   justify-content: center;
@@ -74,9 +78,9 @@ header {
   background-color: var(--theme-button-container-color);
   cursor: pointer;
   color: var(--theme-button-color);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 
-  &:hover{
+  &:hover {
     background-color: var(--theme-button-container-hover-color);
     border: 1px solid var(--theme-button-container-border-hover-color);
   }
@@ -91,7 +95,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: "Monaco", monospace;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-color: var(--link-container-color);
     border: 1px solid var(--link-container-border-color);
     border-radius: 4px;
@@ -101,25 +105,27 @@ header {
 
     &:hover {
       background-color: var(--link-container-hover-color);
-    border: 1px solid var(--link-container-border-hover-color);
+      border: 1px solid var(--link-container-border-hover-color);
     }
   }
 
-   @include mixins.respond(tab-port) {
+  @include mixins.respond(tab-port) {
     flex: 1;
-   a:link,
-  :visited,
-  :active {
-    font-size: 2rem;
-    max-width: 100%;
-  }}
+    a:link,
+    :visited,
+    :active {
+      font-size: 2rem;
+      max-width: 100%;
+    }
+  }
 
   @include mixins.respond(phone) {
     flex: 1;
-   a:link,
-  :visited,
-  :active {
-    font-size: 2rem;
-    max-width: 100%;
+    a:link,
+    :visited,
+    :active {
+      font-size: 2rem;
+      max-width: 100%;
+    }
   }
-}}
+}

@@ -84,9 +84,8 @@ export const stackTwo = {
       "<span class='in-progress'>CI/CD</span>": null,
       "<span class='in-progress'>TDD</span>": null,
       Git: {
+        "GitHub/Lab": null,
         "<span class='in-progress'>Gitflow</span>": null,
-        GitLab: null,
-        GitHub: null,
       },
     },
   },
@@ -99,8 +98,9 @@ export const stackThree = {
         "Linux Commands": null,
       },
       Neovim: null,
-      ESLint: null,
+      "Yarn/Npm": null,
       Prettier: null,
+      ESLint: null,
       "<span class='in-progress'>Webpack</span>": null,
       Parcel: null,
       Vite: null,
@@ -109,8 +109,13 @@ export const stackThree = {
       },
       ChatGPT: null,
       Copilot: null,
-      yarn: null,
-      npm: null,
     },
+  },
+};
+
+export const footer = {
+  "Legend": {
+    "<span class='in-progress'>Learning</span>": null,
+    Using: null,
   },
 };

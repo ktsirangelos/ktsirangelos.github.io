@@ -60,6 +60,7 @@ export const stackOne = {
         EJS: null,
       },
       "<span class='in-progress'>Cypress</span>": null,
+      "<span class='in-progress'>Vitest</span>": null,
       "Jest": null,
     },
   },
@@ -84,8 +85,9 @@ export const stackTwo = {
       "<span class='in-progress'>CI/CD</span>": null,
       "<span class='in-progress'>TDD</span>": null,
       Git: {
-        "GitHub/Lab": null,
         "<span class='in-progress'>Gitflow</span>": null,
+        "GitHub": null,
+        "GitLab": null,
       },
     },
   },

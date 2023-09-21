@@ -2,12 +2,12 @@
 
 footer {
   display: flex;
-  padding: 0 2rem 2rem 0;
-  justify-content: end;
+  padding: 0 0 2rem 2rem;
+  justify-content: start;
 
   pre {
     line-height: 1.8rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--tree-color);
 
     > .in-progress {

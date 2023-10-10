@@ -61,7 +61,7 @@ export const stackOne = {
       },
       "<span class='in-progress'>Cypress</span>": null,
       "<span class='in-progress'>Vitest</span>": null,
-      "Jest": null,
+      Jest: null,
     },
   },
 };
@@ -78,16 +78,16 @@ export const stackTwo = {
       "<span class='in-progress'>Redis</span>": null,
     },
     "<span class='tree-section-title'>Processes</span>": {
-      "<span class='in-progress'>Agile</span>": {
-        "<span class='in-progress'>Scrum</span>": null,
+      Agile: {
+        Scrum: null,
       },
       Testing: null,
       "<span class='in-progress'>CI/CD</span>": null,
       "<span class='in-progress'>TDD</span>": null,
       Git: {
-        "<span class='in-progress'>Gitflow</span>": null,
-        "GitHub": null,
-        "GitLab": null,
+        Gitflow: null,
+        GitHub: null,
+        GitLab: null,
       },
     },
   },
@@ -116,7 +116,7 @@ export const stackThree = {
 };
 
 export const footer = {
-  "Legend": {
+  Legend: {
     "<span class='in-progress'>Learning</span>": null,
     Using: null,
   },

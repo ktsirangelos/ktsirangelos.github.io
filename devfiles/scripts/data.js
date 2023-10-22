@@ -1,6 +1,6 @@
 export const header = `
 <div class="title">
-  <p>Konstantinos Tsirangelos, Web Developer</p>
+  <p>Konstantinos Tsirangelos, Software Engineer</p>
 </div>
 <div class="key">
 <p>Public Key: <span style="color: var(--public-key-age-color)">age</span><span style="color: var(--tree-in-progress-color)">15p6h9ta6v309d03ja64m7dkhgn43k9u6ew57p6ks6y428caypfdqha2d20</span></p>
@@ -15,9 +15,7 @@ export const header = `
 `;
 
 export const about = `
-Hey, I am a web developer based in Rotterdam, NL. I enjoy creating robust, minimal interfaces that get the job done effectively and
-efficiently while providing optimal user experience. I deeply care about making things green, sustainable, educational and fair to all
-groups and individuals. For any questions or work you would like to discuss, feel free to write me an email.
+Hey, I am Konst.<br>I am interested in understanding the shapes of software design behind the code and particular language idioms. I enjoy creating robust, minimal interfaces that get the job done efficiently while providing optimal user experience. I deeply care about making things green, sustainable, educational and fair to all groups and individuals.
 `;
 
 // export const projects = {
@@ -60,7 +58,7 @@ export const stackOne = {
         EJS: null,
       },
       "<span class='in-progress'>Cypress</span>": null,
-      "<span class='in-progress'>Vitest</span>": null,
+      Vitest: null,
       Jest: null,
     },
   },
@@ -99,6 +97,7 @@ export const stackThree = {
       CLI: {
         "Linux Commands": null,
       },
+      Tmux: null,
       Neovim: null,
       "Yarn/Npm": null,
       Prettier: null,

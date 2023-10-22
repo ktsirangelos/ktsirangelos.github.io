@@ -15,7 +15,7 @@ export const header = `
 `;
 
 export const about = `
-Hey, I am Konst.<br>I am interested in understanding the shapes of software design behind the code and particular language idioms. I enjoy creating robust, minimal interfaces that get the job done efficiently while providing optimal user experience. I deeply care about making things green, sustainable, educational and fair to all groups and individuals.
+Hey, I am Konst. I am interested in software architecture and the designs beneath particular language idioms. I enjoy creating robust, minimal interfaces that get the job done efficiently while providing optimal user experience. I care a lot about making things green, sustainable, educational and fair to all groups and individuals.
 `;
 
 // export const projects = {

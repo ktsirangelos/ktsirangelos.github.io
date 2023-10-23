@@ -15,7 +15,10 @@ export const header = `
 `;
 
 export const about = `
-Hey, I am Konst. I am interested in software architecture and the designs behind particular language idioms. I enjoy creating robust, minimal interfaces that get the job done efficiently while providing optimal user experience. I care a lot about making things green, sustainable, educational and fair to all groups and individuals.
+Hey, a few words about me; 
+I enjoy creating robust, minimal interfaces that get the job done efficiently while providing optimal user experience. 
+I am interested in software architecture and the designs behind particular language idioms. 
+I care a lot about making things green, sustainable, educational and fair to all groups and individuals.
 `;
 
 // export const projects = {
@@ -48,6 +51,7 @@ export const stackOne = {
       "<span class='in-progress'>GraphQL</span>": null,
     },
     "<span class='tree-section-title'>Frameworks</span>": {
+      "<span class='in-progress'>Vue.js</span>": null,
       React: {
         "React Router": null,
         "<span class='in-progress'>Redux</span>": null,
@@ -97,13 +101,14 @@ export const stackThree = {
       CLI: {
         "Linux Commands": null,
       },
-      Tmux: null,
+      tmux: null,
       Neovim: null,
-      "Yarn/Npm": null,
+      "yarn/npm": null,
       Prettier: null,
       ESLint: null,
       "<span class='in-progress'>Webpack</span>": null,
       Parcel: null,
+      "<span class='in-progress'>esbuild</span>": null,
       Vite: null,
       "<span class='in-progress'>Docker</span>": {
         "<span class='in-progress'>Composer</span>": null,

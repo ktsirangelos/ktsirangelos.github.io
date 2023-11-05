@@ -2,9 +2,7 @@ export const header = `
 <div class="title">
   <p>Konstantinos Tsirangelos, Software Engineer</p>
 </div>
-<div class="key">
-<p>Public Key: <span style="color: var(--public-key-age-color)">age</span><span style="color: var(--tree-in-progress-color)">15p6h9ta6v309d03ja64m7dkhgn43k9u6ew57p6ks6y428caypfdqha2d20</span></p>
-</div>
+<div class="separator"></div>
 <div class="link">
   <a href="mailto:ktsirangelos@proton.me">Email</a>
 </div>

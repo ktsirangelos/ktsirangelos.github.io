@@ -12,7 +12,7 @@ header {
     padding: 4rem;
     gap: 1rem;
   }
-  
+
   @include mixins.respond(tab-port) {
     padding: 4rem;
   }
@@ -27,10 +27,11 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
+  padding: 0 2rem;
+  white-space: nowrap;
   p {
     font-family: "Monaco", monospace;
     font-size: 1.4rem;
-    padding: 0 2rem;
   }
 
   @include mixins.respond(tab-port) {
@@ -42,22 +43,13 @@ header {
   }
 }
 
-.key {
+.separator {
   flex-grow: 1;
-  color: var(--title-color);
   background-color: var(--title-container-color);
   border: 1px solid var(--title-container-border-color);
   border-radius: 4px;
   height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  p {
-    font-family: "Monaco", monospace;
-    font-size: 1.4rem;
-    letter-spacing: -0.9px;
-    padding: 0 2rem;
-  }
+  white-space: nowrap;
 
   @include mixins.respond(tab-port) {
     display: none;

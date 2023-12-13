@@ -104,15 +104,17 @@ export const stackThree = {
       "yarn/npm": null,
       Prettier: null,
       ESLint: null,
-      "<span class='in-progress'>Webpack</span>": null,
       Parcel: null,
       "<span class='in-progress'>esbuild</span>": null,
       Vite: null,
       "<span class='in-progress'>Docker</span>": {
         "<span class='in-progress'>Composer</span>": null,
       },
-      ChatGPT: null,
-      Copilot: null,
+      "<span class='in-progress'>Kubernetes</span>": null,
+      AI: {
+        ChatGPT: null,
+        Copilot: null,
+      },
     },
   },
 };

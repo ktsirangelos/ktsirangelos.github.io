@@ -82,6 +82,8 @@ export const stackTwo = {
         Scrum: null,
       },
       Testing: null,
+      "<span class='in-progress'>Design</span>": null,
+      "<span class='in-progress'>Engineering</span>": null,
       "<span class='in-progress'>CI/CD</span>": null,
       "<span class='in-progress'>TDD</span>": null,
       Git: {
@@ -105,7 +107,6 @@ export const stackThree = {
       Prettier: null,
       ESLint: null,
       Parcel: null,
-      "<span class='in-progress'>esbuild</span>": null,
       Vite: null,
       "<span class='in-progress'>Docker</span>": {
         "<span class='in-progress'>Composer</span>": null,

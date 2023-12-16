@@ -81,9 +81,9 @@ export const stackTwo = {
       Agile: {
         Scrum: null,
       },
-      Testing: null,
       Design: null,
       Engineering: null,
+      Testing: null,
       "<span class='in-progress'>CI/CD</span>": null,
       "<span class='in-progress'>TDD</span>": null,
       Git: {

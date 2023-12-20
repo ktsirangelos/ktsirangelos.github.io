@@ -55,6 +55,7 @@ export const stackOne = {
         "<span class='in-progress'>Redux</span>": null,
       },
       "<span class='in-progress'>React Native</span>": null,
+      "<span class='in-progress'>Next.js</span>": null,
       "Node.js": {
         Express: null,
         EJS: null,

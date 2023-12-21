@@ -49,7 +49,6 @@ export const stackOne = {
       "<span class='in-progress'>GraphQL</span>": null,
     },
     "<span class='tree-section-title'>Frameworks</span>": {
-      "<span class='in-progress'>Vue.js</span>": null,
       React: {
         "React Router": null,
         "<span class='in-progress'>Redux</span>": null,
@@ -60,6 +59,7 @@ export const stackOne = {
         Express: null,
         EJS: null,
       },
+      Playwright: null,
       "<span class='in-progress'>Cypress</span>": null,
       Vitest: null,
       Jest: null,

@@ -1,5 +1,5 @@
 import { Tree } from "../utils/Tree";
-import { TreeNode } from "../main/objectToTree";
+import { TreeNode } from "../utils/objectToTree";
 
 const footer: TreeNode = {
   Copyright: {

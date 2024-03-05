@@ -1,5 +1,5 @@
-import { TreeNode } from "./objectToTree";
 import { Tree } from "../utils/Tree";
+import { TreeNode } from "../utils/objectToTree";
 
 const About = () => {
   return (

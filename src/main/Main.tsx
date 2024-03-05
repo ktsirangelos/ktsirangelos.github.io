@@ -1,9 +1,10 @@
 import { Tree } from "../utils/Tree";
 import { TreeNode } from "../utils/objectToTree";
+import "./Main.scss";
 
 const About = () => {
   return (
-    <>
+    <p className="about">
       hey! I enjoy creating robust, minimal interfaces that get the job done
       efficiently while providing optimal user experience. I dig software
       architecture and the designs behind particular language idioms. I strive
@@ -12,7 +13,7 @@ const About = () => {
       <br />
       <br />
       Konst
-    </>
+    </p>
   );
 };
 

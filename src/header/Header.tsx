@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MoonIcon } from "../../public/MoonIcon";
 import { SunIcon } from "../../public/SunIcon";
+import "./Header.scss";
 
 export const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);

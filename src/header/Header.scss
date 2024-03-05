@@ -1,0 +1,123 @@
+@use "../scss/mixins";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 2rem;
+
+  @include mixins.respond(phone) {
+    justify-content: center;
+    margin: 0;
+    padding: 4rem;
+    gap: 1rem;
+  }
+
+  @include mixins.respond(tab-port) {
+    padding: 4rem;
+  }
+}
+
+.title {
+  color: var(--title-color);
+  background-color: var(--title-container-color);
+  border: 1px solid var(--title-container-border-color);
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 2rem;
+  white-space: nowrap;
+  p {
+    font-family: "Monaco", monospace;
+    font-size: 1.4rem;
+  }
+
+  @include mixins.respond(tab-port) {
+    display: none;
+  }
+
+  @include mixins.respond(phone) {
+    display: none;
+  }
+}
+
+.separator {
+  flex-grow: 1;
+  background-color: var(--title-container-color);
+  border: 1px solid var(--title-container-border-color);
+  border-radius: 4px;
+  height: 100%;
+  white-space: nowrap;
+
+  @include mixins.respond(tab-port) {
+    display: none;
+  }
+
+  @include mixins.respond(phone) {
+    display: none;
+  }
+}
+
+.theme {
+  display: flex;
+  padding: 0 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--theme-button-container-border-color);
+  border-radius: 4px;
+  background-color: var(--theme-button-container-color);
+  cursor: pointer;
+  color: var(--theme-button-color);
+  font-size: 1.4rem;
+
+  &:hover {
+    background-color: var(--theme-button-container-hover-color);
+    border: 1px solid var(--theme-button-container-border-hover-color);
+  }
+}
+
+.link {
+  a:link,
+  :visited,
+  :active {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monaco", monospace;
+    font-size: 1.4rem;
+    background-color: var(--link-container-color);
+    border: 1px solid var(--link-container-border-color);
+    border-radius: 4px;
+    padding: 1.5rem;
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--link-container-hover-color);
+      border: 1px solid var(--link-container-border-hover-color);
+    }
+  }
+
+  @include mixins.respond(tab-port) {
+    flex: 1;
+    a:link,
+    :visited,
+    :active {
+      font-size: 2rem;
+      max-width: 100%;
+    }
+  }
+
+  @include mixins.respond(phone) {
+    flex: 1;
+    a:link,
+    :visited,
+    :active {
+      font-size: 2rem;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../scss/mixins";
+
+footer {
+  display: flex;
+  padding: 0 0 2rem 2rem;
+  justify-content: start;
+
+  pre {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    color: var(--footer-color);
+
+    > .in-progress {
+      color: var(--tree-in-progress-color);
+    }
+
+    @include mixins.respond(tab-port) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    @include mixins.respond(phone) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+  }
+
+  @include mixins.respond(tab-port) {
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  @include mixins.respond(phone) {
+    justify-content: center;
+    padding: 4rem;
+  }
+}

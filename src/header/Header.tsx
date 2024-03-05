@@ -1,4 +1,14 @@
+import { useState } from "react";
+import { MoonIcon } from "../../public/MoonIcon";
+import { SunIcon } from "../../public/SunIcon";
+
 export const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <>
       <div className="title">
@@ -17,7 +27,9 @@ export const Header = () => {
           GitHub
         </a>
       </div>
-      <button id="theme-toggle" className="theme"></button>
+      <button id="theme-toggle" className="theme" onClick={toggleTheme}>
+        {isDarkMode ? <MoonIcon /> : <SunIcon />}
+      </button>
     </>
   );
 };

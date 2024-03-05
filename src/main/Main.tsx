@@ -21,7 +21,7 @@ const About = () => {
 
 const treeObjects: TreeNode[] = [
   {
-    ".": {
+    "Stack 1/3": {
       Languages: {
         HTML: null,
         CSS: {
@@ -48,7 +48,7 @@ const treeObjects: TreeNode[] = [
   },
 
   {
-    ".": {
+    "Stack 2/3": {
       "Data Stores": {
         MongoDB: {
           Mongoose: null,
@@ -74,7 +74,7 @@ const treeObjects: TreeNode[] = [
   },
 
   {
-    ".": {
+    "Stack 3/3": {
       Tools: {
         "Command Line": null,
         "Tmux/Neovim": null,

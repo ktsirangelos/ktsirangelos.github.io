@@ -4,22 +4,24 @@ import "./Main.scss";
 
 const About = () => {
   return (
-    <p className="about">
-      hey! I enjoy creating robust, minimal interfaces that get the job done
-      efficiently while providing optimal user experience. I dig software
-      architecture and the designs behind particular language idioms. I strive
-      to make things greener, sustainable, educational and fair to all groups
-      and individuals.
-      <br />
-      <br />
-      Konst
-    </p>
+    <div className="about">
+      <p>
+        hey! I enjoy creating robust, minimal interfaces that get the job done
+        efficiently while providing optimal user experience. I dig software
+        architecture and the designs behind particular language idioms. I strive
+        to make things greener, sustainable, educational and fair to all groups
+        and individuals.
+        <br />
+        <br />
+        Konst
+      </p>
+    </div>
   );
 };
 
 const treeObjects: TreeNode[] = [
   {
-    "Stack 1/3": {
+    ".": {
       Languages: {
         HTML: null,
         CSS: {
@@ -46,7 +48,7 @@ const treeObjects: TreeNode[] = [
   },
 
   {
-    "Stack 2/3": {
+    ".": {
       "Data Stores": {
         MongoDB: {
           Mongoose: null,
@@ -72,7 +74,7 @@ const treeObjects: TreeNode[] = [
   },
 
   {
-    "Stack 3/3": {
+    ".": {
       Tools: {
         "Command Line": null,
         "Tmux/Neovim": null,
@@ -99,7 +101,9 @@ export const Main = () => {
     <>
       <About />
       {treeObjects.map((stack, index) => (
-        <Tree key={index} object={stack} />
+        <div className="stack">
+          <Tree key={index} object={stack} />
+        </div>
       ))}
     </>
   );

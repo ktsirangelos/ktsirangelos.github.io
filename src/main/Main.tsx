@@ -1,4 +1,5 @@
-import { objectToTree, TreeNode } from "./objectToTree";
+import { TreeNode } from "./objectToTree";
+import { Tree } from "../utils/Tree";
 
 const About = () => {
   return (
@@ -25,23 +26,18 @@ const treeObjects: TreeNode[] = [
         },
         Javascript: null,
         Typescript: null,
-        GraphQl: null,
         Bash: null,
         PHP: null,
       },
       Frameworks: {
         React: {
           "React Router": null,
-          Redux: null,
         },
-        "React Native": null,
-        "Next.js": null,
         "Node.js": {
           Express: null,
           EJS: null,
         },
         Playwright: null,
-        Cypress: null,
         Vitest: null,
         Jest: null,
       },
@@ -51,13 +47,9 @@ const treeObjects: TreeNode[] = [
   {
     "Stack 2/3": {
       "Data Stores": {
-        Postgres: {
-          Sequelize: null,
-        },
         MongoDB: {
           Mongoose: null,
         },
-        Redis: null,
       },
       Processes: {
         Agile: {
@@ -69,7 +61,6 @@ const treeObjects: TreeNode[] = [
         "Code Reviews": null,
         Testing: null,
         "CI/CD": null,
-        TDD: null,
         Git: {
           Gitflow: null,
           GitHub: null,
@@ -101,11 +92,6 @@ const treeObjects: TreeNode[] = [
     },
   },
 ];
-
-const Tree = ({ object }: { object: TreeNode }) => {
-  const treeString = objectToTree(object);
-  return <pre>{treeString}</pre>;
-};
 
 export const Main = () => {
   return (

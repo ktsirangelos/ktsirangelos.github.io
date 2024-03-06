@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { MoonIcon } from "../../public/MoonIcon";
-import { SunIcon } from "../../public/SunIcon";
+import { MoonIcon } from "../resources/MoonIcon";
+import { SunIcon } from "../resources/SunIcon";
 import "./Header.scss";
 
 export const Header = () => {

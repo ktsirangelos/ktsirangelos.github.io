@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <p>
-        hey! I enjoy creating robust, minimal interfaces that get the job done
+        Hey! I enjoy creating robust, minimal interfaces that get the job done
         efficiently while providing optimal user experience. I dig software
         architecture and the designs behind particular language idioms. I strive
         to make things greener, sustainable, educational and fair to all groups

@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 const footer: TreeNode = {
   Copyright: {
-    "2023-2024": null,
+    "© 2024": null,
   },
 };
 

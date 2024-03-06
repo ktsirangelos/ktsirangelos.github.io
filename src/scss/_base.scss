@@ -104,4 +104,12 @@ html {
   width: 100vw;
   background-color: var(--background-color);
   color: var(--main-text-color);
+
+  @include mixins.respond(tab-port) {
+    height: 100%;
+  }
+
+  @include mixins.respond(phone) {
+    height: 100%;
+  }
 }

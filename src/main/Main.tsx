@@ -11,15 +11,13 @@ const About = () => {
         architecture and the designs behind particular language idioms. I strive
         to make things greener, sustainable, educational and fair to all groups
         and individuals.
-        <br />
-        <br />
-        Konst
       </p>
+      <p>Konst</p>
     </div>
   );
 };
 
-const treeObjects: TreeNode[] = [
+const stacks: TreeNode[] = [
   {
     "Stack 1/3": {
       Languages: {
@@ -100,9 +98,9 @@ export const Main = () => {
   return (
     <>
       <About />
-      {treeObjects.map((stack, index) => (
-        <div className="stack">
-          <Tree key={index} object={stack} />
+      {stacks.map((stack, index) => (
+        <div key={index} className="stack">
+          <Tree object={stack} />
         </div>
       ))}
     </>

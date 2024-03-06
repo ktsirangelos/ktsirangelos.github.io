@@ -1,4 +1,4 @@
-import { objectToTree, TreeNode } from "../utils/objectToTree";
+import { objectToTree, TreeNode } from "js-object-to-tree";
 
 export const Tree = ({ object }: { object: TreeNode }) => {
   const treeString = objectToTree(object);

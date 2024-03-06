@@ -1,5 +1,5 @@
 import { Tree } from "../utils/Tree";
-import { TreeNode } from "../utils/objectToTree";
+import { TreeNode } from "js-object-to-tree";
 import "./Main.scss";
 
 const About = () => {

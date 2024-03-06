@@ -26,12 +26,10 @@ footer {
   }
 
   @include mixins.respond(tab-port) {
-    justify-content: center;
-    padding: 4rem;
+    padding: 5rem;
   }
 
   @include mixins.respond(phone) {
-    justify-content: center;
-    padding: 4rem;
+    padding: 5rem;
   }
 }

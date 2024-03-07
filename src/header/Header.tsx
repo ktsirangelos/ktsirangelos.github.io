@@ -7,13 +7,17 @@ export const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
-    const root = document.getElementById("root");
+    const app = document.querySelector<HTMLElement>(".app");
 
-    root?.classList.contains("dark-mode")
-      ? root?.classList.remove("dark-mode")
-      : root?.classList.add("dark-mode");
+    if (app) {
+      if (app.classList.contains("dark-mode")) {
+        app.classList.remove("dark-mode");
+      } else {
+        app.classList.add("dark-mode");
+      }
 
-    setIsDarkMode(!isDarkMode);
+      setIsDarkMode(!isDarkMode);
+    }
   };
 
   return (

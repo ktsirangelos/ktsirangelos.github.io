@@ -34,7 +34,7 @@ html {
   }
 }
 
-#root {
+.app {
   --background-color: #ffffff;
   --main-text-color: #000000;
 
@@ -65,7 +65,7 @@ html {
   --footer-color: var(--main-text-color);
 }
 
-#root.dark-mode {
+.app.dark-mode {
   --background-color: #1b1b1b;
   --main-text-color: #cccccc;
 
@@ -96,7 +96,7 @@ html {
   --footer-color: var(--main-text-color);
 }
 
-#root {
+.app {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 1fr 15fr 1fr;

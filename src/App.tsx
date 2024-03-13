@@ -6,10 +6,10 @@ import "./App.scss";
 export const App = () => {
   return (
     <div className="app">
-      <header className="navbar">
+      <header className="header">
         <Header />
       </header>
-      <main className="trees">
+      <main className="main">
         <Main />
       </main>
       <footer className="footer">

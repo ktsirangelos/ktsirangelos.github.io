@@ -1,18 +1,18 @@
 import { Header } from "./header/Header";
 import { Main } from "./main/Main";
 import { Footer } from "./footer/Footer";
-import "./scss/main.scss";
+import "./App.scss";
 
 export const App = () => {
   return (
     <div className="app">
-      <header>
+      <header className="navbar">
         <Header />
       </header>
-      <main>
+      <main className="trees">
         <Main />
       </main>
-      <footer>
+      <footer className="footer">
         <Footer />
       </footer>
     </div>

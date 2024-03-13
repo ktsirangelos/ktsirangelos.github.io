@@ -18,98 +18,19 @@
 html {
   font-size: 62.5%;
 
+  @include mixins.respond(phone) {
+    font-size: 60%;
+  }
+
+  @include mixins.respond(tab-port) {
+    font-size: 60%;
+  }
+
   @include mixins.respond(tab-land) {
     font-size: 56.25%;
   }
 
-  @include mixins.respond(tab-port) {
-    font-size: 60%;
-  }
-
-  @include mixins.respond(phone) {
-    font-size: 60%;
-  }
   @include mixins.respond(big-desk) {
     font-size: 75%;
-  }
-}
-
-.app {
-  --background-color: #ffffff;
-  --main-text-color: #000000;
-
-  --title-color: var(--main-text-color);
-  --title-container-color: #f0f0f0;
-  --title-container-border-color: #f0f0f0;
-
-  --link-color: var(--main-text-color);
-  --link-container-color: #f0f0f0;
-  --link-container-border-color: #f0f0f0;
-  --link-container-hover-color: #dfdfdf;
-  --link-container-border-hover-color: #dfdfdf;
-
-  --theme-button-color: white;
-  --theme-button-container-color: #58a6ff;
-  --theme-button-container-hover-color: #095ebe;
-  --theme-button-container-border-color: #58a6ff;
-  --theme-button-container-border-hover-color: #095ebe;
-
-  --tree-color: var(--main-text-color);
-  --tree-title-color: #0077ff;
-  --tree-section-title-color: #ff51ef;
-  --tree-link-color: var(--main-text-color);
-  --tree-link-hover-color: #3fba50;
-  --tree-in-progress-color: #b6b6b6;
-
-  --public-key-age-color: #ffc100;
-  --footer-color: var(--main-text-color);
-}
-
-.app.dark-mode {
-  --background-color: #1b1b1b;
-  --main-text-color: #cccccc;
-
-  --title-color: var(--main-text-color);
-  --title-container-color: #343434;
-  --title-container-border-color: #858585;
-
-  --link-color: var(--main-text-color);
-  --link-container-color: #343434;
-  --link-container-hover-color: #322f1a;
-  --link-container-border-color: #858585;
-  --link-container-border-hover-color: #afa100;
-
-  --theme-button-color: white;
-  --theme-button-container-color: #095ebe;
-  --theme-button-container-hover-color: #58a6ff;
-  --theme-button-container-border-color: #095ebe;
-  --theme-button-container-border-hover-color: #58a6ff;
-
-  --tree-color: var(--main-text-color);
-  --tree-title-color: #6d9eff;
-  --tree-section-title-color: #32ffb1;
-  --tree-link-color: var(--main-text-color);
-  --tree-link-hover-color: #efb584;
-  --tree-in-progress-color: #5a5a5a;
-
-  --public-key-age-color: #17ea75;
-  --footer-color: var(--main-text-color);
-}
-
-.app {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: 1fr 15fr 1fr;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--background-color);
-  color: var(--main-text-color);
-
-  @include mixins.respond(tab-port) {
-    height: 100%;
-  }
-
-  @include mixins.respond(phone) {
-    height: 100%;
   }
 }

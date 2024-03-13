@@ -68,10 +68,9 @@ $dark-mode: (
   @each $key, $value in generate-css-properties($light-mode) {
     #{$key}: #{$value};
   }
-}
-
-.app.dark-mode {
-  @each $key, $value in generate-css-properties($dark-mode) {
-    #{$key}: #{$value};
+  &.dark-mode {
+    @each $key, $value in generate-css-properties($dark-mode) {
+      #{$key}: #{$value};
+    }
   }
 }

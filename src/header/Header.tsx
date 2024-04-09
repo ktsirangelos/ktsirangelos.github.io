@@ -38,7 +38,12 @@ export const Header = () => {
           GitHub
         </a>
       </div>
-      <button id="theme-toggle" className="theme" onClick={toggleTheme}>
+      <button
+        id="theme-toggle"
+        className="theme"
+        onClick={toggleTheme}
+        aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+      >
         {isDarkMode ? <MoonIcon /> : <SunIcon />}
       </button>
     </>

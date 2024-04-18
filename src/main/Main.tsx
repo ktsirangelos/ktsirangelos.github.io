@@ -12,7 +12,6 @@ const About = () => {
         to make things greener, sustainable, educational and fair to all groups
         and individuals.
       </p>
-      <p>Konst</p>
     </div>
   );
 };
@@ -56,16 +55,11 @@ const stacks: TreeNode[] = [
         Agile: {
           Scrum: null,
         },
-        Scripting: null,
-        Engineering: null,
-        Design: null,
         "Code Reviews": null,
         Testing: null,
         "CI/CD": null,
         Git: {
           Gitflow: null,
-          GitHub: null,
-          GitLab: null,
         },
       },
     },
@@ -75,20 +69,14 @@ const stacks: TreeNode[] = [
     "Stack 3/3": {
       Tools: {
         "Command Line": null,
-        "Tmux/Neovim": null,
         "Yarn/Npm": null,
         Composer: null,
-        Prettier: null,
-        ESLint: null,
         Vite: null,
         Docker: null,
         Kubernetes: null,
         Nginx: null,
-        AI: {
-          ChatGPT: null,
-          Gemini: null,
-          Copilot: null,
-        },
+        GitHub: { Actions: null },
+        GitLab: { "CI/CD": null },
       },
     },
   },

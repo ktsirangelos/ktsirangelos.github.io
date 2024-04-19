@@ -2,16 +2,41 @@ import { Tree } from "../utils/Tree";
 import { TreeNode } from "js-object-to-tree";
 import "./Main.scss";
 
-const About = () => {
+const Projects = () => {
+  const projects = [
+    {
+      name: "CTarchitects",
+      url: "https://christinatsirangelou.com",
+    },
+    {
+      name: "fivequarters.studio",
+      url: "https://ktsirangelos.github.io/fivequarters.studio/",
+    },
+    {
+      name: "js-object-to-tree",
+      url: "https://www.npmjs.com/package/js-object-to-tree",
+    },
+    {
+      name: "math-functions",
+      url: "https://packagist.org/packages/ktsirangelos/math-functions",
+    },
+  ];
+
   return (
-    <div className="about">
-      <p>
-        Hey! I enjoy creating robust, minimal interfaces that get the job done
-        efficiently while providing optimal user experience. I dig software
-        architecture and the designs behind particular language idioms. I strive
-        to make things greener, sustainable, educational and fair to all groups
-        and individuals.
-      </p>
+    <div className="projects-container">
+      <div className="projects">
+        <p>Projects 1/1</p>
+        {projects.map((project, index) => (
+          <a
+            key={index}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {index === projects.length - 1 ? "└──" : "├──"} {project.name} →
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
@@ -84,7 +109,7 @@ const stacks: TreeNode[] = [
 export const Main = () => {
   return (
     <>
-      <About />
+      <Projects />
       {stacks.map((stack, index) => (
         <div key={index} className="stack">
           <Tree object={stack} />

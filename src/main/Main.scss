@@ -16,6 +16,7 @@
   @include mixins.respond(phone) {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
     margin: 0;
   }
 
@@ -36,14 +37,6 @@
       color: var(--tree-in-progress-color);
     }
 
-    a {
-      color: var(--tree-link-color);
-      text-decoration: none;
-      &:hover {
-        color: var(--tree-link-hover-color);
-      }
-    }
-
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;
     }
@@ -55,7 +48,14 @@
   }
 }
 
-.stack {
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stack,
+.projects-container {
   display: flex;
   justify-content: center;
 
@@ -68,27 +68,21 @@
     padding: 5rem 5rem;
     justify-content: start;
   }
-}
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  @include mixins.respond(phone) {
-    padding: 0rem 5rem 5rem 5rem;
+  a {
+    color: var(--tree-link-color);
+    text-decoration: none;
+    &:hover {
+      color: var(--tree-link-hover-color);
+    }
   }
 
-  @include mixins.respond(tab-port) {
-    padding: 0rem 5rem 5rem 5rem;
-  }
-
-  p {
+  p,
+  a {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
     font-size: 1.3rem;
     color: var(--tree-color);
-    padding: 0 6vw;
 
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;

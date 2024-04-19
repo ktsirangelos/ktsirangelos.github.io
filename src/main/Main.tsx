@@ -68,7 +68,6 @@ const stacks: TreeNode[] = [
   {
     "Stack 3/3": {
       Tools: {
-        "Command Line": null,
         "Yarn/Npm": null,
         Composer: null,
         Vite: null,

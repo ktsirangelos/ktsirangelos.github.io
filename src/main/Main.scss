@@ -1,10 +1,23 @@
 @use "../scss/mixins";
 
 .main {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
+
+  @include mixins.respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15vw;
+    row-gap: 15vw;
+  }
+
+  @include mixins.respond(phone) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
   pre {
     line-height: 2.7rem;
@@ -40,16 +53,6 @@
       line-height: 3rem;
     }
   }
-
-  @include mixins.respond(tab-port) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-  @include mixins.respond(phone) {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .stack {
@@ -72,6 +75,14 @@
   flex-direction: column;
   gap: 2rem;
 
+  @include mixins.respond(phone) {
+    padding: 0rem 5rem 5rem 5rem;
+  }
+
+  @include mixins.respond(tab-port) {
+    padding: 0rem 5rem 5rem 5rem;
+  }
+
   p {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
@@ -89,13 +100,5 @@
       line-height: 3rem;
       padding: 0;
     }
-  }
-
-  @include mixins.respond(phone) {
-    padding: 0rem 5rem 5rem 5rem;
-  }
-
-  @include mixins.respond(tab-port) {
-    padding: 0rem 5rem 5rem 5rem;
   }
 }

@@ -19,39 +19,6 @@
     row-gap: 0;
     margin: 0;
   }
-
-  pre {
-    line-height: 2.7rem;
-    font-size: 1.3rem;
-    color: var(--tree-color);
-
-    .tree-title {
-      color: var(--tree-title-color);
-    }
-
-    .tree-section-title {
-      color: var(--tree-section-title-color);
-    }
-
-    .in-progress {
-      color: var(--tree-in-progress-color);
-    }
-
-    @include mixins.respond(tab-port) {
-      font-size: 1.5rem;
-    }
-
-    @include mixins.respond(phone) {
-      font-size: 1.8rem;
-      line-height: 3rem;
-    }
-  }
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .stack,
@@ -69,20 +36,18 @@
     justify-content: start;
   }
 
-  a {
-    color: var(--tree-link-color);
-    text-decoration: none;
-    &:hover {
-      color: var(--tree-link-hover-color);
-    }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+  pre,
   p,
   a {
-    line-height: 2.7rem;
-    font-family: "Monaco", monospace;
-    font-size: 1.3rem;
     color: var(--tree-color);
+    font-size: 1.3rem;
+    line-height: 2.7rem;
 
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;
@@ -90,9 +55,16 @@
     }
 
     @include mixins.respond(phone) {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       line-height: 3rem;
-      padding: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--tree-link-hover-color);
     }
   }
 }

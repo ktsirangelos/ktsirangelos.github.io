@@ -44,24 +44,24 @@ const Projects = () => {
 const stacks: TreeNode[] = [
   {
     "Stack 1/3": {
-      Languages: {
+      LANGUAGES: {
         HTML: null,
-        CSS: {
-          Sass: null,
+        Sass: {
+          CSS: null,
         },
-        Javascript: null,
-        Typescript: null,
+        Typescript: { Javascript: null },
+        Ruby: null,
         Bash: null,
-        PHP: null,
       },
-      Frameworks: {
+      FRAMEWORKS: {
         React: {
-          "React Router": null,
+          Router: null,
         },
+        Redux: null,
         "Node.js": {
           Express: null,
-          EJS: null,
         },
+        Rails: null,
         Playwright: null,
         Vitest: null,
         Jest: null,
@@ -71,30 +71,28 @@ const stacks: TreeNode[] = [
 
   {
     "Stack 2/3": {
-      "Data Stores": {
+      "DATA STORES": {
         MongoDB: {
           Mongoose: null,
         },
       },
-      Processes: {
+      PROCESSES: {
         Agile: {
           Scrum: null,
         },
         "Code Reviews": null,
+        Refactoring: null,
         Testing: null,
         "CI/CD": null,
-        Git: {
-          Gitflow: null,
-        },
+        Git: null,
       },
     },
   },
 
   {
     "Stack 3/3": {
-      Tools: {
+      TOOLS: {
         "Yarn/Npm": null,
-        Composer: null,
         Vite: null,
         Docker: null,
         Kubernetes: null,

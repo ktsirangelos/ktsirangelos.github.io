@@ -1,76 +1,62 @@
-@function generate-css-properties($mode) {
-  $properties: ();
-  @each $key, $value in $mode {
-    $property: unquote("--#{$key}");
-    $properties: map-merge(
-      $properties,
-      (
-        $property: $value,
-      )
-    );
-  }
-  @return $properties;
+@use "mixins" as mix;
+
+$themes: (
+  dark: (
+    background-color: #1b1b1b,
+    main-text-color: #cccccc,
+    title-color: #cccccc,
+    title-container-color: #343434,
+    title-container-border-color: #858585,
+    link-color: #cccccc,
+    link-container-color: #343434,
+    link-container-hover-color: #322f1a,
+    link-container-border-color: #858585,
+    link-container-border-hover-color: #afa100,
+    theme-button-color: white,
+    theme-button-container-color: #095ebe,
+    theme-button-container-hover-color: #58a6ff,
+    theme-button-container-border-color: #095ebe,
+    theme-button-container-border-hover-color: #58a6ff,
+    tree-color: #cccccc,
+    tree-title-color: #6d9eff,
+    tree-section-title-color: #32ffb1,
+    tree-link-color: #cccccc,
+    tree-link-hover-color: #efb584,
+    tree-in-progress-color: #5a5a5a,
+    public-key-age-color: #17ea75,
+    footer-color: #cccccc,
+  ),
+  light: (
+    background-color: #ffffff,
+    main-text-color: #000000,
+    title-color: #000000,
+    title-container-color: #f0f0f0,
+    title-container-border-color: #f0f0f0,
+    link-color: #000000,
+    link-container-color: #f0f0f0,
+    link-container-hover-color: #dfdfdf,
+    link-container-border-color: #f0f0f0,
+    link-container-border-hover-color: #dfdfdf,
+    theme-button-color: white,
+    theme-button-container-color: #58a6ff,
+    theme-button-container-hover-color: #095ebe,
+    theme-button-container-border-color: #58a6ff,
+    theme-button-container-border-hover-color: #095ebe,
+    tree-color: #000000,
+    tree-title-color: #0077ff,
+    tree-section-title-color: #ff51ef,
+    tree-link-color: #000000,
+    tree-link-hover-color: #3fba50,
+    tree-in-progress-color: #b6b6b6,
+    public-key-age-color: #ffc100,
+    footer-color: #000000,
+  ),
+);
+
+:root {
+  @include mix.apply-theme(map-get($themes, "dark"));
 }
 
-$light-mode: (
-  background-color: #ffffff,
-  main-text-color: #000000,
-  title-color: #000000,
-  title-container-color: #f0f0f0,
-  title-container-border-color: #f0f0f0,
-  link-color: #000000,
-  link-container-color: #f0f0f0,
-  link-container-hover-color: #dfdfdf,
-  link-container-border-color: #f0f0f0,
-  link-container-border-hover-color: #dfdfdf,
-  theme-button-color: white,
-  theme-button-container-color: #58a6ff,
-  theme-button-container-hover-color: #095ebe,
-  theme-button-container-border-color: #58a6ff,
-  theme-button-container-border-hover-color: #095ebe,
-  tree-color: #000000,
-  tree-title-color: #0077ff,
-  tree-section-title-color: #ff51ef,
-  tree-link-color: #000000,
-  tree-link-hover-color: #3fba50,
-  tree-in-progress-color: #b6b6b6,
-  public-key-age-color: #ffc100,
-  footer-color: #000000,
-);
-
-$dark-mode: (
-  background-color: #1b1b1b,
-  main-text-color: #cccccc,
-  title-color: #cccccc,
-  title-container-color: #343434,
-  title-container-border-color: #858585,
-  link-color: #cccccc,
-  link-container-color: #343434,
-  link-container-hover-color: #322f1a,
-  link-container-border-color: #858585,
-  link-container-border-hover-color: #afa100,
-  theme-button-color: white,
-  theme-button-container-color: #095ebe,
-  theme-button-container-hover-color: #58a6ff,
-  theme-button-container-border-color: #095ebe,
-  theme-button-container-border-hover-color: #58a6ff,
-  tree-color: #cccccc,
-  tree-title-color: #6d9eff,
-  tree-section-title-color: #32ffb1,
-  tree-link-color: #cccccc,
-  tree-link-hover-color: #efb584,
-  tree-in-progress-color: #5a5a5a,
-  public-key-age-color: #17ea75,
-  footer-color: #cccccc,
-);
-
-.app {
-  @each $key, $value in generate-css-properties($light-mode) {
-    #{$key}: #{$value};
-  }
-  &.dark-mode {
-    @each $key, $value in generate-css-properties($dark-mode) {
-      #{$key}: #{$value};
-    }
-  }
+.light-mode {
+  @include mix.apply-theme(map-get($themes, "light"));
 }

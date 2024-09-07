@@ -1,36 +1,39 @@
 // Media Query Manager
-
-/*
-0-600px: phone
-600-900px: tablet portrait
-900-1200px: tablet landscape
-[1200-1800px] default version
-1800px + : large desktop
-*/
-
 @mixin respond($breakpoint) {
-  // 600px
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
     }
   }
-  // 900px
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
       @content;
     }
   }
-  // 1200px
   @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {
       @content;
     }
   }
-  // 1800px
   @if $breakpoint == big-desk {
     @media only screen and (min-width: 112.5em) {
       @content;
     }
+  }
+}
+
+// Function to generate CSS custom properties
+@function generate-css-properties($theme) {
+  $result: ();
+  @each $key, $value in $theme {
+    $result: map-merge($result, (--#{$key}: #{$value}));
+  }
+  @return $result;
+}
+
+// Mixin to apply theme
+@mixin apply-theme($theme) {
+  @each $property, $value in generate-css-properties($theme) {
+    #{$property}: #{$value};
   }
 }

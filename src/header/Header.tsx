@@ -1,23 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MoonIcon } from "../resources/MoonIcon";
 import { SunIcon } from "../resources/SunIcon";
 import "./Header.scss";
 
 export const Header = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("light-mode", isLightMode);
+  }, [isLightMode]);
 
   const toggleTheme = () => {
-    const app = document.querySelector<HTMLElement>(".app");
-
-    if (app) {
-      if (app.classList.contains("dark-mode")) {
-        app.classList.remove("dark-mode");
-      } else {
-        app.classList.add("dark-mode");
-      }
-
-      setIsDarkMode(!isDarkMode);
-    }
+    setIsLightMode((prevMode) => !prevMode);
   };
 
   return (
@@ -42,9 +36,11 @@ export const Header = () => {
         id="theme-toggle"
         className="theme"
         onClick={toggleTheme}
-        aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+        aria-label={
+          isLightMode ? "Switch to dark mode" : "Switch to light mode"
+        }
       >
-        {isDarkMode ? <MoonIcon /> : <SunIcon />}
+        {isLightMode ? <MoonIcon /> : <SunIcon />}
       </button>
     </>
   );

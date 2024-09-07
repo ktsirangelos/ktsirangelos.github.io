@@ -46,22 +46,23 @@ const stacks: TreeNode[] = [
     "Stack 1/3": {
       LANGUAGES: {
         HTML: null,
-        Sass: {
+        SCSS: {
           CSS: null,
         },
         Typescript: { Javascript: null },
-        Ruby: null,
         Bash: null,
+        Ruby: null,
       },
       FRAMEWORKS: {
+        Rails: null,
         React: {
           Router: null,
+          Query: null,
         },
         Redux: null,
         "Node.js": {
           Express: null,
         },
-        Rails: null,
         Playwright: null,
         Vitest: null,
         Jest: null,

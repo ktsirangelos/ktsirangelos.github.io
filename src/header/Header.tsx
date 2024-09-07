@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <>
       <div className="title">
-        <p>Konstantinos Tsirangelos, Full Stack Software Engineer</p>
+        <p>Konstantinos Tsirangelos, Software Engineer</p>
       </div>
       <div className="separator"></div>
       <div className="link">

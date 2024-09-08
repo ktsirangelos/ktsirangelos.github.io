@@ -54,9 +54,9 @@ $themes: (
 );
 
 :root {
-  @include mix.apply-theme(map-get($themes, "dark"));
+  @include mix.apply-theme(map-get($themes, "light"));
 }
 
-.light-mode {
-  @include mix.apply-theme(map-get($themes, "light"));
+.dark-mode {
+  @include mix.apply-theme(map-get($themes, "dark"));
 }

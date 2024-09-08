@@ -4,14 +4,14 @@ import { SunIcon } from "../resources/SunIcon";
 import "./Header.scss";
 
 export const Header = () => {
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("light-mode", isLightMode);
-  }, [isLightMode]);
+    document.documentElement.classList.toggle("dark-mode", isDarkMode);
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
-    setIsLightMode((prevMode) => !prevMode);
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   return (
@@ -36,11 +36,9 @@ export const Header = () => {
         id="theme-toggle"
         className="theme"
         onClick={toggleTheme}
-        aria-label={
-          isLightMode ? "Switch to dark mode" : "Switch to light mode"
-        }
+        aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
-        {isLightMode ? <MoonIcon /> : <SunIcon />}
+        {isDarkMode ? <SunIcon /> : <MoonIcon />}
       </button>
     </>
   );
